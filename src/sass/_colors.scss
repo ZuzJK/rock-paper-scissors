@@ -1,0 +1,21 @@
+:root{
+
+    --clr-scissors: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    --clr-scissors-700: #C76B1B;
+    --clr-paper: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    --clr-paper-700: hsl(229, 64%, 46%);
+    --clr-rock: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    --clr-rock-700: #9F0F30;
+    /*
+    Those colors are to version that was not implemented. I don't remove it bcoz perhaps one day I am going
+    to extend and use it
+    --clr-lizard: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    --clr-spock: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    */
+    --clr-neutral--700: hsl(229, 25%, 31%);
+    --clr-neutral--400: hsl(217, 16%, 45%);
+    --clr-neutral--100: hsl(0,0%,100%);
+
+    --clr-shadow: hsla(0, 0%, 0%, 0.5);
+    --grad-bg: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}

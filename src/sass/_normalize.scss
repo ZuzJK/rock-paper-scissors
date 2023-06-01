@@ -1,0 +1,9 @@
+html,body {
+    height: 100%;
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+:focus {
+    outline-offset: 10px;
+}

@@ -1,0 +1,22 @@
+
+
+.container {
+    --container-radius: calc(var(--brds) /4);
+    display: flex; 
+    justify-content: space-between;
+    //flex-basis: 750px;
+    //max-width: 750px;
+    border: 2px solid var(--clr-neutral--400);
+    border-radius: var(--container-radius);
+    padding: 1em 1.2em;
+    width: min(100%,750px);
+    //width: 750px;
+    //min-width: 250px;
+}
+
+@media only screen and (min-width: 700px) {
+
+   .container{
+    --container-radius: var(--brds);  
+   } 
+}

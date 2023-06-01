@@ -1,0 +1,30 @@
+@import 'sass/colors';
+@import 'sass/sizes';
+@import 'sass/normalize';
+//@import 'sass/mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-basis: 750px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--grad-bg);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    background-position: 100% 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: var(--clr-neutral--100);
+    padding: 2em 1em;
+}
+@media only screen and (min-width: 700px) {
+        .container {
+            button {
+                margin-left: auto;
+                
+            }
+        }
+    }

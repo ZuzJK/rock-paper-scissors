@@ -1,0 +1,32 @@
+@import '../../../sass/mixins';
+
+.button {
+    border: 1px solid transparent;
+}
+.element {
+    position: relative;
+    display: block;
+    background-image: var(--el-gradient);
+    box-shadow: 0 5px 0 0 var(--el-clr-shadow);
+    cursor: pointer;
+    @include circle(var(--el-size));
+    &::after {
+        @include weaponPseudoEl(var(--img));
+    }
+}
+.paper {
+    --el-gradient: var(--clr-paper); 
+    --el-clr-shadow: var(--clr-paper-700);
+    --img: url(../../../assets/img/icon-paper.svg);
+}
+.rock {
+    --el-gradient: var(--clr-rock);
+    --el-clr-shadow: var(--clr-rock-700);
+    --img: url(../../../assets/img/icon-rock.svg);
+}
+.scissors {
+    --el-gradient: var(--clr-scissors);
+    --el-clr-shadow: var(--clr-scissors-700);
+    --img: url(../../../assets/img/icon-scissors.svg);
+    justify-self: start;    
+}

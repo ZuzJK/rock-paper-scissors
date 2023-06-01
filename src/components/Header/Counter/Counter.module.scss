@@ -1,0 +1,22 @@
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr-neutral--100);
+    color: var(--clr-paper-700);
+    text-transform: uppercase;
+    border-radius: calc(var(--brds)/3);
+    padding: .8em 1.2em;
+    letter-spacing: .1em;
+}
+.number {
+    font-size: 2.125rem;
+    color: var(--clr-neutral--400);
+}
+
+@media only screen and (min-width: 700px) {
+    .block {
+        padding: 1em 2em;
+    }
+}

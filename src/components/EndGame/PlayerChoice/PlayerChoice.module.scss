@@ -1,0 +1,49 @@
+.title {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    text-align: center;
+    text-transform: uppercase;
+}
+.col {
+    display: flex;
+    flex-direction: column-reverse;
+   // justify-content: center;
+   // justify-items: center;
+    align-items: center;
+    gap: 3em;
+    --box-shadow: rgba(100,100,100,.1);
+    button {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 0px 40px var(--box-shadow),
+                        0 0 0px 80px var(--box-shadow),
+                        0 0 0px 120px var(--box-shadow);
+            border-radius: 50%;
+            opacity: 0;
+        }
+        &[data-highlighted="true"]::before {
+            opacity: 1;
+        }
+        &[data-highlighted="false"] {
+            z-index: 1;
+            /* This is to ensure shadowbox from winner doesnt overlap the other.
+            I made this one comment bcoz this piece of code is odd.
+            Doesn't make a sense unless you made it or spend time to analyze code.
+            Also its easy to forget */
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .col {
+        flex-direction: column;
+        grid-template: 0;
+        button {
+            transform: scale(1.5);
+         }
+    }
+}

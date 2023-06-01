@@ -1,0 +1,38 @@
+%buttonBase {
+    background-color: var(--clr-button);
+    padding: .8em 3em;
+    border: 2px var(--clr-neutral--100) solid;
+    border-radius: calc(var(--brds)/4);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: var(--clr-font);
+    text-transform: uppercase;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button {
+    --clr-button: var(--clr-neutral--100);
+    --clr-font: var(--clr-neutral--700);
+    transition: color .7s;
+    @extend %buttonBase;
+    &:hover {
+        color: crimson;
+    }
+
+    &Ghost {
+        --clr-button: transparent;
+        --clr-font: var(--clr-neutral--100);
+        color: var(--clr-neutral--100);
+        transition: opacity 1s;
+        @extend %buttonBase;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+    &Icon {
+        border: 1px solid transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+}
