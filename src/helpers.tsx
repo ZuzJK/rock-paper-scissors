@@ -29,7 +29,6 @@ export const handleGame = (e: React.MouseEvent<HTMLDivElement>,arr: string[]) =>
     if(user){
     
         if(computer === user) {
-            
         }else if (
             (computer === "paper" && user === "rock") ||
             (computer === "rock" && user === "scissors") ||

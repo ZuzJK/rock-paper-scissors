@@ -11,8 +11,8 @@ const Element = ({type,selected}: ILayoutElementProps) =>
                 <button  
                         className={`${styles.button} ${styles.element} ${styles[type]}`}
                         value={type}
+                        aria-label={type}
                         data-highlighted={selected?"true":"false"}>
-                        kok
                 </button>
         </div>
                 
